@@ -29,7 +29,7 @@ We developed a Python script that reads the XML DOM of `.xaml` files and process
 In our case, we had three different libraries to interact with different systems. UiPath, SAP and ServiceNow. However, this script can be easily extended with your own libraries.
 
 ## Video demo
-[![UiPath Worfklows to Libs Video Demo](https://img.youtube.com/vi/hcV-x6a_1xw/0.jpg)](https://www.youtube.com/watch?v=hcV-x6a_1xw "UiPath Worfklows to Libs Video Demo")
+[![UiPath Worfklows to Libs Video Demo](https://img.youtube.com/vi/KxbKylV1qHY/0.jpg)](https://www.youtube.com/watch?v=KxbKylV1qHY "UiPath Worfklows to Libs Video Demo")
 ## How to use it
 ### Requirements
 - Python 3
