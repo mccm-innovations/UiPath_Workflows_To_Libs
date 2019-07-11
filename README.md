@@ -26,8 +26,7 @@ We convert workflows calls to library calls.
 ## How we built it
 We developed a Python script that reads the XML DOM of `.xaml` files and process it converting workflow calls to library calls. First, we find out which are the namespaces of the current workflow files along with their input and output arguments. Then, we replace the workflow call with the library call adding those arguments. Finally, the input `.xaml` is overwritten with the new XML DOM structure.
 
-By default, it supports UiPath, SAP and ServiceNow libraries and namespaces. 
-This script can be easily extended with your own libraries.  
+In our case, we had three different libraries to interact with different systems. UiPath, SAP and ServiceNow. However, this script can be easily extended with your own libraries.
 
 ## Video demo
 [![UiPath Worfklows to Libs Video Demo](https://img.youtube.com/vi/9wkb_Vy0RUg/0.jpg)](https://www.youtube.com/watch?v=9wkb_Vy0RUg "UiPath Worfklows to Libs Video Demo")
