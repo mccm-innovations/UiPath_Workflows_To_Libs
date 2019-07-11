@@ -1,6 +1,8 @@
 # UiPath Workflows to Libs
 ## Inspiration
+One of the best features we had in the latest version of UiPath was the ability to create customized libraries. Prior to this, we were using reusable components by invoking workflow files. 
 
+Once we created our libraries, we had to update the existing code of all the robots to ensure that they were using our brand new and shiny libraries - and we didn't want to do this manually!
 
 ## What it does
 
