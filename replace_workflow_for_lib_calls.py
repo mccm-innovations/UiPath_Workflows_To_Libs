@@ -16,6 +16,7 @@ def run_replace(filepath):
         lib_separator_index = full_wf_filename.find("+")
         if lib_separator_index > -1:
             wf_lib = full_wf_filename[1:lib_separator_index].lower()
+            # Set your namespaces short names here
             ns = 'unk'
             if 'uipath' in wf_lib:
                 ns = 'uilib'
@@ -44,6 +45,7 @@ def run_replace(filepath):
 
     root_node = dom.getElementsByTagName('Activity')[0]
     for ns in namespaces:
+        # Set your full namespaces here
         if ns is 'uilib':
             root_node.setAttribute('xmlns:uilib', 'clr-namespace:UiPathLibrary;assembly=UiPathLibrary')
         elif ns is 'saplib':
@@ -58,7 +60,7 @@ def run_replace(filepath):
 if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument("-d", "--dir_path", dest="dir_path",
-                        help="Root dir where pdf files are located")
+                        help="Root dir where xaml files are located")
 
     args = parser.parse_args()
     dir_path = args.dir_path
